@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header id="header">
+      <h1>Port<span>folio</span></h1>
+
+      <nav>
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#Home">Portfolio</a></li>
+          <li><a href="#services">Service</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="Home">
+      <div class="left-main">
+        <h1>Hi, I'm <span>Krishan</span></h1>
+        <br />
+        <h3 class="h3"><span>Front-end Developer</span></h3>
+        <br />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus,
+          perspiciatis exercitationem. In voluptates aperiam culpa labore!
+          Ducimus in qui quo sit atque, voluptatibus, ratione modi, aperiam
+          distinctio veniam repellat repudiandae?
+        </p>
+
+        <div class="tags">
+          <a href="cv.pdf" download="">Download CV</a>
+        </div>
+      </div>
+
+      <div class="right-main">
+        <!-- <img src="1.jpeg" alt=""> -->
+      </div>
+    </main>
+
+    <section id="about">
+      <div class="about-container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="2.webp" alt="" />
+          </div>
+          <!-- <div class="about-col-2"></div> -->
+          <!-- </div> -->
+
+          <div class="about-col-2">
+            <h1>About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+              ratione voluptatum esse illum quibusdam dicta aliquid! Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Sapiente illo
+              accusantium placeat iste in repudiandae nemo, maxime possimus
+              repellendus quae aperiam assumenda ullam minus? Obcaecati laborum
+              debitis maiores id facilis
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Developer:</span><br />Web Development</li>
+                <li><span>UI/UX:</span><br />Web Design</li>
+                <li>
+                  <span>Responsive Design:</span><br />Responsive Web Design
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>10th</span><br />From BP High school</li>
+                <li><span>12th</span><br />From G.S.S.S</li>
+                <li><span>B.tech CSE</span><br />SDIET</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Internship</span><br />At CodSoft</li>
+                <li><span>Freelancing</span><br />Front-end</li>
+                <li>
+                  <span>Projects</span><br />Portfolio, Amazon & other
+                  E-Commerce
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="services">
+      <div class="service-container">
+        <h1 class="sub-tilte">My Services</h1>
+
+        <div class="service-list">
+          <i class="ri-code-s-slash-line"></i>
+          <h2>Web Design</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet totam ratione corporis quaerat possimus deleniti?</p>
+          <div class="layer"></div>
+        </div>
+
+        <div class="service-list">
+          <i class="ri-crop-2-line"></i>
+          <h2>UI/UX Designer</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet totam ratione corporis quaerat possimus deleniti?</p>
+
+        </div>
+
+        <div class="service-list">
+          <i class="ri-slideshow-3-line"></i>
+          <h2>Responsive design</h2>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet totam ratione corporis quaerat possimus deleniti?</p>
+
+        </div>
+      </div>
+
+      <button class="btn">Read More</button>
+
+    </section>
+
+    <section id="mywork">
+      <h1>My Work</h1>
+      <div class="work-container work-row">
+        <div class="col-1">
+          <img src="3.png" alt="">
+          <h3>Amazone Clone</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, maxime. Recusandae, quis animi. Ea, autem!</p>
+          <a href="#"></a>
+          
+        </div>
+
+        <div class="col-1">
+          <img src="4.jpg" alt="">
+          <h3>E-Commerce Site</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, maxime. Recusandae, quis animi. Ea, autem!</p>
+          <a href="#"></a>
+        </div>
+
+        <div class="col-1">
+          <img src="5.png" alt="">
+          <h3>Bubble Game</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, maxime. Recusandae, quis animi. Ea, autem!</p>
+          <a href="#"></a>
+        </div>
+
+      </div>
+
+    </section>
+
+    <div id="contact">
+      <div class="contact-container">
+        <div class="left-contact">
+          <h1>Contact Me</h1>
+          <h3><i class="ri-mail-line"></i>  Krishansingh2030@gmail.com</h3>
+          <h4><i class="ri-customer-service-line"></i> 8447068335</h4>
+        </div>
+        <div class="right-contact">
+          <form action="" class="form" name="submit-to-google-sheet">
+            <div class="inner-div">
+              <label for="">Firstname : </label>
+              <input type="text" name="Firstname" class="inp" />
+              <br /><br />
+      
+              <label for="">Lastname : </label>
+              <input type="text" name="Lastname" />
+              <br /><br />
+      
+              <label for="">Phone no. </label>
+              <input type="number" name="Phone number" />
+              <br /><br />
+      
+              <label for="">Email : </label>
+              <input type="email" name="Email" />
+              <br /><br />
+              <label for="">Massege : </label>
+
+           <textarea name="Massege" id="" cols="30" rows="5" class="msgbox"></textarea>
+           <br /><br />
+
+        <input type="submit" name="submit" class="submit" />
+
+      </div>
+
+      <span class="msg"></span>
+    </form>
+
+          <!-- <button class="btn">Submit</button> -->
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="foot">
+        Copyright &copy; 2023 <span>Krishan Singh</span> 
+      </div>
+    </footer>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+  </body>
+</html>
