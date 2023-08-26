@@ -2,10 +2,6 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   /* background-color: black; */
-   /* background-color: rgb(196, 193, 193); */
-   /* background-color: rgb(214, 212, 212); */
-   /* color: #fff; */
    scroll-behavior: smooth;
 }
 
@@ -14,23 +10,25 @@ html,body {
     width: 100%;
 }
 
+
+/* Header Section */
+
+
 #header{
-    /* border: 2px solid red; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: sticky;
-    /* margin: 20px 3px; */
     width: 100%;
     height: 10%;
     background-color: rgb(214, 212, 212);
 }
 
 #header h1{
-    margin-left: 20px;
-    color: rgb(111, 24, 192);
+    margin-left: 15px;
+    color: rgb(99, 10, 182);
     cursor: pointer;
-    font-size: 40px;
+    font-size: 2.5vmax;
     font-weight: 800;
 }
 
@@ -46,22 +44,23 @@ html,body {
 }
 
 #header nav ul li{
-    /* border: 2px solid green; */
-    padding: 0px 10px;
-    margin-right: 20px;
+    padding: 0px 0.6vmax;
 }
 
 #header nav ul li a{
     text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-size: 1.7vmax;
     font-weight: 800;
 }
+
+
+/* Home Section */
+
 
 #Home{
     width: 100%;
     height: 80%;
-    /* border: 2px solid red; */
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -69,43 +68,35 @@ html,body {
 }
 
 .left-main{
-    /* border: 2px solid green; */
     width: 40%;
-    background: transparent;
     color: black;
     position: relative;
 }
 
-.left-main h1,h3{
-    background: transparent;
-    color: black;
-}
-
 .left-main p{
     color: black;
+    font-size: 1.3vmax;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.left-main h1 span{
-    background: transparent;
+.left-main h1 span,h3 span{
     color: crimson;
 }
 
-.left-main h3 span{
-    background: transparent;
-    color: crimson;
-}
+
 
 .tags{
     position: absolute;
-    margin-top: 20px;
+    margin-top: 1vmax;
     border: 2px solid blueviolet;
     padding: 10px;
     border-radius: 10px;
+    box-shadow: 0 0 5px black;
 }
 
 .tags a{
     color: crimson;
-    /* background-color: black; */
     text-decoration: none;
     font-size: 20px;
     font-weight: 700;
@@ -113,7 +104,6 @@ html,body {
 
 .right-main{
     border: 7px solid rgb(106, 20, 185);
-    /* -webkit-text-stroke-color: lightcoral; */
     width: 24%;
     height: 60%;
     background-image: url(1.jpeg);
@@ -122,41 +112,60 @@ html,body {
     border-radius: 300px;
 }
 
+.anchor-tag{
+    margin: 10px 0px;
+}
+
+.anchor-link{
+    margin: 10px 0;
+}
+
+.anchor-tag i{
+    font-size: 2vmax;
+    font-weight: 900;
+    margin: 30px 10px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 0 3px black;
+}
+
+
+/* About Section */
+
+
 .about-container{
-    height: 80vh;
+    background-color: rgb(214, 212, 212);
 }
 
 .row{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    background-color: rgb(196, 193, 193);
+    background-color: rgb(214, 212, 212);
     padding: 40px 0 0 0;
 }
 
 .about-col-1{
     flex-basis: 30%;
-    background: transparent;
 }
 
 .about-col-1 img{
     width: 100%;
     border-radius: 15px;
-    height: 70%;
+    height: 95%;
 }
 
 .about-col-2{
+    margin-top: 30px;
     flex-basis: 60%;
     height: 50%;
-    background: transparent;
 }
 
 .about-col-2 h1{
-    font-size: 40px;
+    font-size: 3vmax;
     font-weight: 500;
     margin: 10px;
-    background: transparent;
-    color: rgb(194, 10, 47);
+    color: rgb(206, 14, 53);
     font-weight: 700;
 }
 
@@ -167,25 +176,21 @@ html,body {
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
-    color: black;
-    background: transparent;
-    /* border: 2px solid red; */
 }
 
 .tab-links{
-    margin-right: 50px;
+    margin-right: 2vmax;
     font-size: 22px;
     font-weight: 600;
     cursor: pointer;
     position: relative;
-    color: black;
 }
 
 .tab-links::after{
     content: "";
     width: 0px;
     height: 3px;
-    /* background-color: red; */
+    background-color: red;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -199,32 +204,29 @@ html,body {
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
-    background: transparent;
     
 }
 
 .tab-contents ul li span{
     color: crimson;
-    font-size: 20px;
+    font-size: 1.4vmax;
     font-weight: 700;
 }
 
 .tab-contents{
     display: none;
-    color: black;
-    background: transparent;
 }
 
 .tab-contents.active-tab{
     display: block;
-    color: black;
-    /* background: transparent; */
-    /* background: white; */
 }
+
+
+/* Service Section */
+
 
 #services{
     padding: 20px 0;
-    /* border: 2px solid red; */
     width: 100%;
     height: 80%;
     position: relative;
@@ -235,32 +237,26 @@ html,body {
     position: absolute;
     top: 10px;
     left: 45%;
-    background: transparent;
     color: rgb(209, 8, 48);
     font-weight: 900;
     font-size: 2.5vmax;
 }
 
 .service-container{
-    /* border: 2px solid green; */
     display: flex;
     width: 100%;
     height: 70%;
     justify-content: space-evenly;
     align-items: center;
     margin: 50px 0;
-    background: transparent;
 }
 
 .service-list{
-    background: transparent;
-    /* background-color: rgb(0, 0, 0); */
     width: 30%;
     height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* color: #fff; */
     flex-direction: column;
     text-align: center;
     box-shadow: 0 0 5px rgba(0, 0, 0, 1);
@@ -268,18 +264,11 @@ html,body {
     gap: 10px;
     cursor: pointer;
     background-color: #e7e1e1a4;
-    color: black;
 }
 
 .service-list:hover{
-    /* background-color: #e7e1e1a4;
-    color: black; */
     box-shadow: 0px 0px 15px black;
     transition: all ease 0.3;
-}
-
-.service-list i, h2,p{
-    background: transparent;
 }
 
 .btn{
@@ -289,42 +278,40 @@ html,body {
     padding: 10px;
     left: 47%;
     bottom: 70px;
-    /* width: 20%;
-    height: 10%; */
     border-radius: 20px;
-    /* border: none; */
     cursor: pointer;
     box-shadow: 0 0 10px black;
 }
 
+
+/* Work Section */
+
+
 #mywork{
     width: 100%;
-    height: 85%;
-    /* border: 2px solid red; */
+    height: 90%;
     padding: 40px 0 0 0;
     background-color: rgb(214, 212, 212);
-    /* position: relative; */
 }
 
 #mywork h1{
     left: 45%;
     position: absolute;
-    margin: 0px 0px 20px 0;
+    /* margin: 0px 0px 0px 0; */
     font-size: 35px;
     font-weight: 700;
     color: crimson;
 }
 
 .work-row{
+    height: 90%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
-    /* border: 2px solid green; */
     margin: 70px 30px 0 30px;
 }
 
 .col-1{
-    /* border: 2px solid blue; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -336,10 +323,36 @@ html,body {
 }
 
 .col-1 img{
-    background: transparent;
+    /* background: transparent; */
     display: block;
     border-radius: 10px;
 }
+
+.col-1 p{
+    margin-top: -10px;
+}
+
+.col-1 a{
+    text-decoration: none;
+    border-radius: 30px;
+    border: none;
+    padding: 10px;
+    transition: all ease-in 0.1;
+    background-color: rgb(101, 13, 184);
+    color: #fff;
+    font-size: 1vmax;
+    font-weight: 500;
+    box-shadow: 0 0 5px black;
+}
+
+.col-1 a:hover{
+    scale: 1.1;
+    background-color: white;
+    color: black;
+}
+
+/* Contact Section */
+
 
 #contact{
     width: 100%;
@@ -355,27 +368,28 @@ html,body {
 }
 
 .left-contact{
-    /* border: 2px solid red; */
     gap: 20px;
 }
 
 .left-contact h1{
     font-size: 40px;
     margin-bottom: 20px;
+    color: crimson;
 }
 
 .left-contact h3{
     font-size: 20px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .left-contact h4{
     font-size: 20px;
+    cursor: pointer;
 }
 
 .right-contact{
     display: flex;
-    /* border: 2px solid red; */
     width: 50%;
     height: 70%;
     margin: 20px 0 0 0;
@@ -385,6 +399,10 @@ html,body {
     align-items: center;
     text-align: center;
 }
+
+
+/* Form Section */
+
 
 .form{
     background-color: rgb(214, 212, 212);
@@ -416,13 +434,13 @@ html,body {
 
 
 .submit{
-    background-color: blueviolet;
+    background-color: rgb(111, 23, 194);
     color: #fff;
     border: none;
     width: 100px;
     border-radius: 10px;
-    font-size: 20px;
-    font-weight: 200;
+    font-size: 2vmax;
+    font-weight: 500;
     box-shadow: 3px 3px 3px rgb(7, 7, 7);
     cursor: pointer;
 }
@@ -442,57 +460,8 @@ html,body {
 }
 
 
-/* Media query */
+/* Footer Section */
 
-
-@media (max-width: 700px)and (min-width:200px){
-
-    .form{
-        width: 100%;
-        height: 70%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .inner-div{
-        width: 95%;
-        height: 70%;
-
-    }
-
-    .inner-div label{
-        font-size: 20px;
-    }
-
-    .inner-div input{
-        font-size: 15px;
-    }
-
-    .btn{
-        font-size: 20px;
-        padding: 1px;
-        font-weight: 400;
-        border-radius: 20px;
-        margin: 0 0 0 20px;
-        cursor: pointer;
-    }
-
-    .submit{
-        font-size: 20px;
-        background-color: blue;
-        margin: 0 0 0 20px;
-        padding: 4px;
-        font-weight: 600;
-        border-radius: 20px;
-        cursor: pointer;
-    }
-
-    .msgbox{
-        width: 65%;
-        height: 15%;
-    }
-    
-}
 
 footer{
     width: 100%;
@@ -510,5 +479,305 @@ footer{
 }
 
 .foot span{
-    color: blueviolet;
+    color: rgb(105, 17, 187);
+
+}
+
+
+
+
+/* Media query */
+
+
+
+
+
+@media (max-width: 700px)and (min-width:200px){
+
+
+    /* Header Section */
+
+
+    #header{
+        width: 100%;
+    }
+
+    #header h1{
+        font-size: 3vmax;
+        font-weight: 700;
+    }
+
+    #header nav{
+        width: 50%;
+        margin: 0 10px 0 0px;
+    }
+    
+    #header nav ul li a{
+        font-size: 1.2vmax;
+    }
+
+    .anchor-tag h3{
+        font-size: 1.4vmax;
+    }
+
+    /* Home Section */
+
+
+    #Home{
+        width: 100%;
+        border-bottom: 2px solid black;
+    }
+    
+    .left-main{
+        /* border: 2px solid green; */
+        width: 40%;
+    }
+    
+    .left-main h1{
+        background: transparent;
+        font-size: 2vmax;
+    }
+
+    .left-main h3{
+        font-size: 1.4vmax;
+    }
+    
+    .left-main p{
+        font-size: 1.2vmax;
+    }
+    
+    .tags{
+        padding: 3px;
+        border-radius: 10px;
+    }
+    
+    .tags a{
+        font-size: 1.5vmax;
+        font-weight: 700;
+    }
+    
+    .right-main{
+        border: 5px solid rgb(106, 20, 185);
+        width: 45%;
+        height: 45%;
+        border-radius: 300px;
+    }
+
+
+    /* About Section */
+
+    /* #about{
+        width: 100%;
+    } */
+
+
+    .about-container{
+        position: relative;
+        border-bottom: 2px solid black;
+    }
+    
+    .row{
+        padding: 40px 0 0 0;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .about-col-1{
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-col-2{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-self: center;
+        width: 80%;
+    }
+
+    .about-col-1 img{
+        width: 35%;
+        border-radius: 15px;
+        margin: 10px;
+    }
+    
+    .about-col-2 h1{
+        font-size: 4vmax;
+        font-weight: 700;
+        margin: 0px 0px 0 0;
+        position: absolute;
+        top: 0;
+        left: 32%;
+    }
+    
+    .about-col-2 p{
+        font-size: 2vmax;
+    }
+    
+    .tab-titles{
+        margin: 10px 0;
+    }
+    
+    .tab-links{
+        font-size: 2vmax;
+        font-weight: 900;
+    }
+    
+    .tab-contents ul li span{
+        font-size: 1.5vmax;
+        font-weight: 700;
+    }
+
+
+    /* Service Section */
+
+    #services{
+        border-bottom: 2px solid black;
+        width: 100%;
+    }
+
+
+    .service-container > h1{
+        position: absolute;
+        top: 10px;
+        left: 32%;
+        font-size: 4vmax;
+    }
+
+    .service-container{
+        width: 100%;
+        height: 70%;
+        margin: 50px 0;
+    }
+    
+    .service-list{
+        width: 30%;
+        border-radius: 10px;
+        gap: 10px;
+    }
+
+    .service-list h2{
+        font-size: 1.8vmax;
+        font-weight: 900;
+    }
+
+    .service-list p{
+        font-size: 1.8vmax;
+    }
+
+    .btn{
+        padding: 7px;
+        left: 40%;
+        bottom: 70px;
+        font-size: 1.6vmax;
+        border-radius: 18px;
+        cursor: pointer;
+        box-shadow: 0 0 10px black;
+    }
+
+
+    /* Mywork Section */
+
+    #mywork{
+        width: 100%;
+        height: 90%;
+        padding: 40px 0 0 0;
+        background-color: rgb(214, 212, 212);
+        border-bottom: 2px solid black;
+    }
+    
+    #mywork h1{
+        left: 35%;
+        position: absolute;
+        font-size: 4vmax;
+        font-weight: 900;
+        /* margin-top: -10px; */
+    }
+
+    .work-row{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    
+    .col-1{
+        gap: 10px;
+    }
+
+    .col-1 h3{
+        font-size: 1.7vmax;
+    }
+    
+    .col-1 p{
+        font-size: 1.5vmax;
+    }
+
+    .col-1 a{
+        padding: 10px;
+        font-size: 1.3vmax;
+    }
+    
+    /* Contact Section */
+
+
+    #contact{
+        width: 100%;
+        height: 80%;
+    }
+  
+    .left-contact h1{
+        font-size: 2vmax;
+        margin-bottom: 10px;
+        /* box-shadow: 5px 5px 5px black; */
+    }
+    
+    .left-contact h3{
+        font-size: 1.3vmax;
+        margin-bottom: 5px;
+    }
+    
+    .left-contact h4{
+        font-size: 1.3vmax;
+    }
+
+   
+    /* Form Section */
+
+
+    .inner-div label{
+        font-size: 2vmax;
+    }
+
+    .inner-div input{
+        font-size: 1.4vmax;
+        height: 3.5vmax;
+    }
+
+    .inner-div .submit{
+        margin: 0 10 0 20px;
+        padding: 5px;
+        font-size: 1.7vmax;
+        font-weight: 900;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .msgbox{
+        width: 17vmax;
+        height: 13vmax;
+    }
+
+    .msg{
+        position: absolute;
+        top: 100%;
+        left: 10%;
+        font-size: 1.7vmax;
+        font-weight: 500;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .foot span{
+        font-size: 2.3vmax;
+    }
+
 }
