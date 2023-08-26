@@ -84,8 +84,6 @@ html,body {
     color: crimson;
 }
 
-
-
 .tags{
     position: absolute;
     margin-top: 1vmax;
@@ -126,7 +124,7 @@ html,body {
     margin: 30px 10px;
     border-radius: 50%;
     border: none;
-    box-shadow: 0 0 3px black;
+/*     box-shadow: 0 0 3px black; */
 }
 
 
@@ -297,7 +295,6 @@ html,body {
 #mywork h1{
     left: 45%;
     position: absolute;
-    /* margin: 0px 0px 0px 0; */
     font-size: 35px;
     font-weight: 700;
     color: crimson;
@@ -323,7 +320,6 @@ html,body {
 }
 
 .col-1 img{
-    /* background: transparent; */
     display: block;
     border-radius: 10px;
 }
@@ -350,6 +346,7 @@ html,body {
     background-color: white;
     color: black;
 }
+
 
 /* Contact Section */
 
@@ -529,7 +526,6 @@ footer{
     }
     
     .left-main{
-        /* border: 2px solid green; */
         width: 40%;
     }
     
@@ -562,14 +558,6 @@ footer{
         height: 45%;
         border-radius: 300px;
     }
-
-
-    /* About Section */
-
-    /* #about{
-        width: 100%;
-    } */
-
 
     .about-container{
         position: relative;
@@ -630,6 +618,7 @@ footer{
 
 
     /* Service Section */
+   
 
     #services{
         border-bottom: 2px solid black;
@@ -677,6 +666,7 @@ footer{
 
 
     /* Mywork Section */
+   
 
     #mywork{
         width: 100%;
@@ -716,6 +706,7 @@ footer{
         padding: 10px;
         font-size: 1.3vmax;
     }
+   
     
     /* Contact Section */
 
